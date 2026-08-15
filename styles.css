@@ -1,0 +1,61 @@
+@config "./tailwind.config.js";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /* letter-spacing: 0.11em; */
+    font-family: Sen, sans-serif;
+}
+
+img {
+    display: block;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #212033;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #b2b6da1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b2b6da31;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b2b6da6b;
+}
+
+/* 1. Fond de la barre : Dégradé noir transparent style YouTube */
+.custom-player::-webkit-media-controls-panel {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 20%, transparent 100%) !important;
+    background-color: transparent !important;
+    padding-bottom: 1% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.redirection {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.arrow {
+    width: 17px;
+    height:17x;
+    object-fit: contain;
+}

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "TT Interphases Pro Trial Medium";
+    src: url("/fonts/TT Interphases Pro Trial Medium.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "TT Interphases Pro Trial Regular";
+    src: url("/fonts/TT Interphases Pro Trial Regular.ttf") format("truetype")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #212033;
+    text-decoration: none;
+    letter-spacing: 0.11em;
+    font-family: "TT Interphases Pro Trial Regular", "NEXT ART", "Arial";
+    font-style: normal;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #B2B6DA;
+}
+
+header {
+    position: relative;
+    background: #212033;
+    border: 2px solid rgba(178, 182, 218, 0.03);
+}
+
+li {
+    list-style: none;
+}
+
+/* Tous les liens */
+.nav__link,
+.nav__dropdown a {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20% 0px;
+}
+
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-inline:5rem; */
+    margin-inline: 20%;
+}
+
+
+.nav__links a:hover,
+.nav__links div:hover {
+    color: white;
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.nav__link__selected {
+    color: white;
+    font-family: "TT Interphases Pro Trial Medium";
+}
+
+
+.nav__dropdown .nav__dropdown__link {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin: 0;
+}
+
+.nav__dropdown__content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    /* border: 1px solid; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.nav__dropdown__content a {
+    float: none;
+    color: #B2B6DA;
+    /* padding: 0.7rem 0.5rem; */
+    padding: 10% 10%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav__dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.081);
+}
+
+.nav__dropdown:hover .nav__dropdown__content {
+    display: block;
+}
+
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    width: 10em;
+  /* height: auto; */
+}
+
+.pre__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 20%;
+
+    min-width: 600px;
+    max-width: 98%;
+}
+
+.pre__title {
+    font-size:3rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50.2px;
+    color: #FFFFFF;
+}

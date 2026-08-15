@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- CACHE -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>Web Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bda9f8e80.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/styles.css">
+
+    <link rel="icon" href="/ressources/icon.png" type="image/x-icon">
+</head>
+
+<body class="bg-background text-normal">
+
+    <header
+        class="flex border-b-2 border-normal border-opacity-10 py-5 w-full items-center justify-center h-16 select-none">
+
+        <div class="w-screen px-8 md:w-[50em] lg:w-[60em] relative">
+
+            <div class="transition-all space-y-1.5 md:hidden group/menu hover:cursor-pointer menu">
+                <span class="transition-all block w-6 h-0.5 bg-normal group-hover/menu:bg-white"></span>
+                <span class="transition-all block w-6 h-0.5 bg-normal group-hover/menu:bg-white"></span>
+                <span class="transition-all block w-6 h-0.5 bg-normal group-hover/menu:bg-white"></span>
+            </div>
+
+            <nav
+                class="pl-8 py-8 md:m-0 md:pl-0 hidden md:flex md:flex-row list-none justify-between absolute bg-background w-full left-0 md:relative flex flex-col md:py-5 gap-y-1 border-b-2 border-normal border-opacity-10  backdrop-filter">
+                <li class="hover:text-normal/50 transition-all"><a class="hover:cursor-pointer [-webkit-user-drag:none]"
+                        href="/">Présentation</a>
+                </li>
+                <li class="transition-all"><a class="hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                        href="/pages/audiovisuel.html">Audiovisuel</a></li>
+                <li class="transition-all group/menu">
+                    <a class="hover:text-normal/50 [-webkit-user-drag:none] pb-[25px]">Graphisme</a>
+                    <div
+                        class="flex pl-8 py-1 md:absolute md:hidden md:group-hover/menu:flex flex-col md:gap-y-2 md:py-3 md:px-3 md:border-2 md:mt-[20px] md:border-card-border md:rounded-md md:bg-[#262538]">
+                        <a class="hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                            href="/pages/projetsenentreprise.html">Projets en entreprise</a>
+                        <a class="hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                            href="/pages/projetspersonnels.html">Projets personnels</a>
+                    </div>
+                </li>
+                <li class="transition-all"><a class="text-white hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                        href="/pages/webdesign.html">Webdesign</a></li>
+                <li class="transition-all"><a class="hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                        href="/pages/informatique.html">Informatique</a></li>
+                <li class="transition-all"><a class="hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none]"
+                    href="/pages/dessin.html">Dessin</a></li>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="flex flex-col items-center  m-6 md:my-11">
+
+        <div class="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+
+            <!-- INTRO -->
+            <div class="flex flex-col gap-5">
+                <h1 class="w-fit font-bold text-[30px] text-white">Mes
+                    projets web design</h1>
+                <p class="text-justify text-normal/70">
+                    Dans cette section, je présente les projets en web design sur lesquels j'ai travaillé seule. Il
+                    s'agit de la conception d'interfaces et d'application des principes ergonomiques UX/UI.
+                </p>
+
+                <!--
+                <div class="flex flex-col gap-2 bg-black/10 rounded-[3px] border-card-border border-2 p-5">
+                    <div class="flex gap-10">
+                        <div class="">
+                            <p>Application de pilotage vidéo multi-casque VR pour muséologie</p>
+                            <p>Application de suivi et de pilotage de trotinette VR</p>
+                            <p>Site web marketplace VR</p>
+                        </div>
+                        <div>
+                            
+                            <p>JukeboxVRLite</p>
+                            <p>MWheel Mobility VR</p>
+                            <p>GEDHYS</p>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+            <!-- GRID -->
+            <div class="grid grid-cols-1 gap-8">
+
+                <!-- CARD -->
+                <div class="i3 flex flex-col gap-6 bg-card-background rounded-[15px] border-card-border border-2 p-8">
+
+                    <!-- TOP -->
+                    <div class="flex flex-col gap-5">
+                        <p class="font-bold text-[25px]">Application de pilotage vidéo multi-casque VR pour
+                            muséologie</p>
+                        <div class="flex flex-col gap-[5px] font-bold text-[12px]">
+                            <div class="flex flex-wrap gap-1">
+                                <p class="w-fit px-[5px] text-rose rounded-[4px] bg-tag-rose-background">Figma
+                                </p>
+                                <p class="w-fit px-[5px] text-rose rounded-[4px] bg-tag-rose-background">Adobe
+                                    Illustrator
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-1">
+                                <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Création
+                                    d'interfaces</p>
+                                <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Prototypage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-col gap-5">
+                        <p class="text-normal/90 ">Démonstration de l'application (Prototype Jukebox VR Lite)</p>
+                        <div class="flex flex-col gap-1">
+                            <div onclick="togglePlayVideo(this)" class="w-full h-full hover:cursor-pointer">
+                                <video preload="none" controls playsinline
+                                    class="custom-player w-full h-full object-cover object-center accent-orange-500 rounded-[10px]"
+                                    poster="/ressources/design/web design/jukeboxvr.png">
+                                    <source src="/ressources/design/web design/stmb-demo.mp4" type="video/mp4">
+                                    Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                </video>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <p class="text-normal/90 ">Tutoriel de l'application de pilotage VR</p>
+                        <div class="flex flex-col gap-1">
+                            <div onclick="togglePlayVideo(this)" class="w-full h-full hover:cursor-pointer">
+                                <video preload="none" controls playsinline
+                                    class="custom-player w-full h-full object-cover object-center accent-orange-500 rounded-[10px]"
+                                    poster="/ressources/design/web design/jukebox-tuto.png">
+                                    <source src="/ressources/design/web design/jukebox-tuto.mp4" type="video/mp4">
+                                    Votre navigateur ne prend pas en charge les vidéos HTML5.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOTTOM -->
+
+                    <div class="flex flex-col gap-1">
+
+                        <label class="relative block cursor-pointer group">
+
+                            <div onclick="toggleTextDiv(this)"
+                                class="more-content opacity-60 text-justify max-h-[3.5rem] overflow-hidden transition-all duration-400 ease-in-out">
+                                <p>
+                                    Cette application de gestion de séances et de casques VR pour muséologie fait
+                                    partie de
+                                    la
+                                    solution JukeboxVRLite chez Studio Muybridge.
+                                    J'ai conçu l'intégralité du design de l'application et j'ai également travaillé
+                                    sur les
+                                    différentes fonctionnalités qu'elle propose.
+                                    <br><br>
+                                    Deux versions de cette application ont été réalisées : la première a été conçue
+                                    pour le
+                                    cas
+                                    simple où l'on voudrait faire regarder au groupe de visite une seule et même
+                                    vidéo.
+                                    <br>
+                                    La deuxième version permet à différents groupes de pouvoir lancer un même film à
+                                    des
+                                    moments désynchronisés
+                                    grâce à la fonctionnalité de création de plusieurs séances.
+                            </div>
+
+                            <div
+                                class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#262537] to-transparent pointer-events-none transition-opacity duration-300">
+                            </div>
+                        </label>
+
+                        <p onclick="toggleText(this)"
+                            class="more-content-text flex justify-end cursor-pointer z-10 text-sm underline">
+                            Lire plus</p>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <a href="https://www.figma.com/design/LNxWyBZb3BKcriM4YcnKA0/Interfaces-Jukebox-VR-Original?node-id=0-1&p=f&t=vOM7yRA32Cx2OuyZ-0"
+                            target="_blank">
+                            <button
+                                class="hover:underline transition-all font-bold rounded-[5px] text-white px-5 py-[5px] bg-bleu hover:opacity-50 flex items-center gap-2">
+                                Voir les interfaces
+                                <div>
+                                    <i class="redirection" stroke-width="2.5"
+                                        data-lucide="square-arrow-out-up-right"></i>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD -->
+                <div class="i3 flex flex-col gap-8 bg-card-background rounded-[15px] border-card-border border-2 p-8">
+
+                    <!-- TOP -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col">
+                            <p class="font-bold text-[25px]">Billeterie dématérialisée pour l'Opéra Orchestre National
+                                Montpellier</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] font-bold text-[12px]">
+                            <div class="flex gap-1">
+                                <p class="w-fit px-[5px] text-rose rounded-[4px] bg-tag-rose-background">Figma
+                                </p>
+                            </div>
+                            <div class="flex gap-1 flex-wrap">
+                                <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Création
+                                    d'interfaces
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+                        <div onclick="togglePlayVideo(this)" class="w-full h-full hover:cursor-pointer">
+                            <video preload="none" controls playsinline
+                                class="custom-player w-full h-full object-cover object-center accent-orange-500 rounded-[10px]"
+                                poster="/ressources/design/web design/musee.png">
+                                <source src="/ressources/design/web design/musee.mp4" type="video/mp4">
+                                Votre navigateur ne prend pas en charge les vidéos HTML5.
+                            </video>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+
+                    <!-- BOTTOM -->
+
+                </div>
+
+                <!-- CARD -->
+                <div class="i3 flex flex-col gap-8 bg-card-background rounded-[15px] border-card-border border-2 p-8">
+
+                    <!-- TOP -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex flex-col">
+                            <p class="font-bold text-[25px]">Application de suivi et de pilotage de trotinette VR</p>
+                            <p>MWheel Mobility VR</p>
+                        </div>
+                        <div class="flex flex-col gap-[5px] font-bold text-[12px]">
+                            <div class="flex gap-1">
+                                <p class="w-fit px-[5px] text-rose rounded-[4px] bg-tag-rose-background">Figma
+                                </p>
+                            </div>
+                            <div class="flex gap-1 flex-wrap">
+                                <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Création
+                                    d'interfaces
+                                </p>
+                                <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Adaptation
+                                    ergonomique d'une ancienne version</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+                        <div onclick="togglePlayVideo(this)" class="w-full h-full hover:cursor-pointer">
+                            <video preload="none" controls playsinline
+                                class="custom-player w-full h-full object-cover object-center accent-orange-500 rounded-[10px]"
+                                poster="/ressources/design/web design/mwheel-simulation.png">
+                                <source src="/ressources/design/web design/mwheel-simulation.mp4" type="video/mp4">
+                                Votre navigateur ne prend pas en charge les vidéos HTML5.
+                            </video>
+                        </div>
+                        <img class="rounded-[10px]" src="/ressources/design/web design/mwheel.png">
+                    </div>
+
+                    <!-- BOTTOM -->
+
+                    <div class="flex flex-col gap-1">
+                        <label class="relative block cursor-pointer group">
+                            <div onclick="toggleTextDiv(this)"
+                                class="more-content opacity-60 text-justify max-h-[3.5rem] overflow-hidden transition-all duration-400 ease-in-out">
+                                <p>
+                                    MWheel Mobility VR est une application mobile de simulation de trotinette. Le joueur
+                                    choisit
+                                    un parcours à effectuer en trotinette et il est confronté à des situations de danger
+                                    sur la
+                                    route.
+                                    <br><br>
+                                    Client de Studio Muybridge, j'ai crée la nouvelle version de l'application pour
+                                    MWheel
+                                    Mobility.
+                                    Je me suis basée sur les anciennes interfaces de l'application pour les refaire de
+                                    manière
+                                    plus
+                                    ergonomique, que ce soit en termes de couleurs ou d'agencement, et ce, en conservant
+                                    les
+                                    fonctionnalités.
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#262537] to-transparent pointer-events-none transition-opacity duration-300">
+                            </div>
+                        </label>
+                        <p onclick="toggleText(this)"
+                            class="more-content-text flex justify-end cursor-pointer z-10 text-sm underline">
+                            Lire plus</p>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <a href="https://www.figma.com/file/K3Pm9ByZJREHkmAsJIcKop/Interfaces-MWheel-Original?node-id=0%3A1&t=TWga9LYCjLvC6qYP-1"
+                            target="_blank">
+                            <button
+                                class="hover:underline transition-all font-bold rounded-[5px] text-white px-5 py-[5px] bg-bleu hover:opacity-50 flex items-center gap-2">
+                                Voir les interfaces
+                                <div>
+                                    <i class="redirection" stroke-width="2.5"
+                                        data-lucide="square-arrow-out-up-right"></i>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- CARD -->
+            <div class="i3 flex flex-col gap-8 bg-card-background rounded-[15px] border-card-border border-2 p-8">
+
+                <!-- TOP -->
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col">
+                        <p class="font-bold text-[25px]">Site web marketplace</p>
+                        <p>GEDHYS</p>
+                    </div>
+                    <div class="flex flex-col gap-[5px] font-bold text-[12px]">
+                        <div class="flex gap-1">
+                            <p class="w-fit px-[5px] text-rose rounded-[4px] bg-tag-rose-background">Figma
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-1">
+                            <p class="w-fit px-[5px] text-violet rounded-[4px] bg-tag-violet-background">Création
+                                d'interfaces
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="rounded-[10px]" src="/ressources/design/web design/gedhys.png">
+
+                <!-- BOTTOM -->
+
+                <div class="flex flex-col gap-1">
+                    <label class="relative block cursor-pointer group">
+                        <div onclick="toggleTextDiv(this)"
+                            class="more-content opacity-60 text-justify max-h-[3.5rem] overflow-hidden transition-all duration-400 ease-in-out">
+                            <p>
+                                GEDHYS (Groupement Européen de Distributeurs en produits d’Hygiène-entretien et
+                                Services)
+                                est un site web marketplace
+                                permettant aux partenaires du GEDAL de mettre en
+                                vente leurs produits.
+
+                                Le site web a pour but de faciliter la mise en relation et
+                                la prise de commandes avec la mise en
+                                place d’un service de régie de médias.
+                                <br><br>
+                                Dans le but d'introduire le produit aux clients, j'ai réalisé les premières
+                                maquettes du
+                                site.
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#262537] to-transparent pointer-events-none transition-opacity duration-300">
+                        </div>
+                    </label>
+                    <p onclick="toggleText(this)"
+                        class="more-content-text flex justify-end cursor-pointer z-10 text-sm underline">
+                        Lire plus</p>
+                </div>
+
+                <div class="flex justify-end">
+                    <a href="https://www.figma.com/file/ASTClbbclRJjVAfijJypER/Untitled?node-id=0%3A1&t=qZT82NhZbUhYS7Kp-1"
+                        target="_blank">
+                        <button
+                            class="hover:underline transition-all font-bold rounded-[5px] text-white px-5 py-[5px] bg-bleu hover:opacity-50 flex items-center gap-2">
+                            Voir les interfaces
+                            <div>
+                                <i class="redirection" stroke-width="2.5" data-lucide="square-arrow-out-up-right"></i>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <footer class="pt-10">
+        <p class="flex justify-center py-[10px] border-t-2 border-normal border-opacity-10">
+            Made with&nbsp;<span class=" text-rose rounded-[4px] bg-tag-rose-background px-[4px]">&lt;3</span>&nbsp;by
+            Nancy</p>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script defer src="/script.js?v=1.1"></script>
+</body>
+
+
+
+
+</html>
