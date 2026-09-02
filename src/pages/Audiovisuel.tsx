@@ -8,7 +8,7 @@ import Tag from '../components/Tag';
 import VideoPlayer from '../components/VideoPlayer';
 
 const cantineMedia: LightboxItem[] = [
-  { type: 'image', src: '/optimized/ressources/evenementiel/d0.webp' },
+  { type: 'image', src: '/optimized/ressources/evenementiel/d0.png' },
   { type: 'youtube', src: 'z_pQs2EDsbo' },
   { type: 'image', src: '/optimized/ressources/audiovisuel/macantine/final3.png' },
 ];
@@ -70,7 +70,7 @@ export default function Audiovisuel() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-              <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/evenementiel/d0.webp" items={cantineMedia} index={0} />
+              <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/evenementiel/d0.png" items={cantineMedia} index={0} />
               <VideoPlayer youtubeId="z_pQs2EDsbo" />
             </div>
 
