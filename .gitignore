@@ -1,0 +1,6 @@
+*.mp4
+*.mov
+node_modules/
+dist/
+*.tsbuildinfo
+public/optimized/

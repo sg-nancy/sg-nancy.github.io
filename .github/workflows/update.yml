@@ -1,0 +1,24 @@
+name: update website
+
+on:
+  push:
+    branches:
+      - alternance
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: executing remote ssh commands using password
+    
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd website
+          rm -rf .* *
+          git clone https://nancy-siong:${{ secrets.PAT }}@github.com/nancy-siong/portfolio-avril-2023-htmlcsstw.git -b alternance .
