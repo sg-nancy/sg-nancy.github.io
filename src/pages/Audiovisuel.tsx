@@ -10,7 +10,7 @@ import VideoPlayer from '../components/VideoPlayer';
 const cantineMedia: LightboxItem[] = [
   { type: 'image', src: '/optimized/ressources/evenementiel/d0.webp' },
   { type: 'youtube', src: 'z_pQs2EDsbo' },
-  { type: 'image', src: '/optimized/ressources/audiovisuel/macantine/final3.webp' },
+  { type: 'image', src: '/optimized/ressources/audiovisuel/macantine/final3.png' },
 ];
 
 const courseMedia: LightboxItem[] = [
@@ -74,7 +74,7 @@ export default function Audiovisuel() {
               <VideoPlayer youtubeId="z_pQs2EDsbo" />
             </div>
 
-            <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/audiovisuel/macantine/final3.webp" items={cantineMedia} index={2} />
+            <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/audiovisuel/macantine/final3.png" items={cantineMedia} index={2} />
           </Card>
 
           {/* PROMO */}
