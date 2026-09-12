@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <img
             className="h-40 rounded-full mb-9"
-            src="/optimized/ressources/presentation/photo-cv5.webp"
+            src="presentation/photo-cv5.webp"
             alt="Nancy"
           />
 
@@ -23,15 +23,15 @@ export default function Home() {
           </div>
         </div>
 
-        <p className="text-normal/70 text-justify mb-9 lg:text-[18px] lg:w-[800px] [text-align-last:center]">
+        <p className="text-normal/70 text-justify mb-9 lg:text-[18px] lg:w-200 [text-align-last:center]">
           Bienvenue ! Parcourez le portfolio pour découvrir la variété dans mes réalisations (:
         </p>
 
         <div className="flex justify-end">
           <Link to="/audiovisuel">
-            <button className="transition-all cursor-pointer font-bold rounded-[8px] text-white px-5 py-[5px] bg-linear-to-r from-bleu to-violet shadow-md shadow-black/30 hover:opacity-80 hover:scale-[1.01] active:scale-95 flex items-center gap-2">
+            <button className="transition-all cursor-pointer font-bold rounded-lg text-white px-5 py-1.25 bg-linear-to-r from-bleu to-violet shadow-md shadow-black/30 hover:opacity-80 hover:scale-[1.01] active:scale-95 flex items-center gap-2">
               Commencer la visite
-              <ArrowRight className="w-[17px] h-[17px]" strokeWidth={2.8} />
+              <ArrowRight className="w-4.25 h-4.25" strokeWidth={2.8} />
             </button>
           </Link>
         </div>

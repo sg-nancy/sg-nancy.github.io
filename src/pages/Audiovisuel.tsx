@@ -8,31 +8,31 @@ import Tag from '../components/Tag';
 import VideoPlayer from '../components/VideoPlayer';
 
 const cantineMedia: LightboxItem[] = [
-  { type: 'image', src: '/optimized/ressources/evenementiel/d0.png' },
+  { type: 'image', src: 'evenementiel/d0.png' },
   { type: 'youtube', src: 'z_pQs2EDsbo' },
-  { type: 'image', src: '/optimized/ressources/audiovisuel/macantine/final3.png' },
+  { type: 'image', src: 'audiovisuel/macantine/final3.png' },
 ];
 
 const courseMedia: LightboxItem[] = [
   { type: 'youtube', src: 'INx2e5ajWwo' },
-  { type: 'image', src: '/optimized/ressources/audiovisuel/auboutdelacourse/logos3.webp' },
+  { type: 'image', src: 'audiovisuel/auboutdelacourse/logos3.webp' },
 ];
 
 const brollMedia: LightboxItem[] = [
-  { type: 'image', src: '/optimized/ressources/audiovisuel/b%20roll/storyboard.webp' },
+  { type: 'image', src: 'audiovisuel/b%20roll/storyboard.webp' },
   { type: 'youtube', src: '0EkuIJ_21bA' },
 ];
 
 const processusMedia: LightboxItem[] = [
-  { src: '/optimized/ressources/audiovisuel/reve/storyboard-1.webp' },
-  { src: '/optimized/ressources/audiovisuel/reve/tournage.webp' },
-  { src: '/optimized/ressources/audiovisuel/reve/st.webp' },
+  { src: 'audiovisuel/reve/storyboard-1.webp' },
+  { src: 'audiovisuel/reve/tournage.webp' },
+  { src: 'audiovisuel/reve/st.webp' },
 ];
 
 export default function Audiovisuel() {
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes projets audiovisuels">
           <p>
             Du crayon jusqu'à l'ordinateur, je conçois, je filme, je produis, je monte et j'anime ce
@@ -53,7 +53,7 @@ export default function Audiovisuel() {
                 </p>
                 <p className="text-normal/90">Ville de Montpellier</p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="rose">Adobe Illustrator</Tag>
                   <Tag color="rose">Adobe Premiere Pro</Tag>
@@ -70,11 +70,11 @@ export default function Audiovisuel() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-              <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/evenementiel/d0.png" items={cantineMedia} index={0} />
+              <MediaImage className="rounded-[10px] w-full" items={cantineMedia} index={0} />
               <VideoPlayer youtubeId="z_pQs2EDsbo" />
             </div>
 
-            <MediaImage className="rounded-[10px] w-full" src="/optimized/ressources/audiovisuel/macantine/final3.png" items={cantineMedia} index={2} />
+            <MediaImage className="rounded-[10px] w-full" items={cantineMedia} index={2} />
           </Card>
 
           {/* PROMO */}
@@ -89,7 +89,7 @@ export default function Audiovisuel() {
                   Studio Muybridge
                 </p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="rose">Adobe Premiere Pro</Tag>
                   <Tag color="rose">Adobe After Effects</Tag>
@@ -123,7 +123,7 @@ export default function Audiovisuel() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="rose">Adobe After Effects</Tag>
                   <Tag color="rose">Adobe Illustrator</Tag>
@@ -155,7 +155,7 @@ export default function Audiovisuel() {
                   "Au bout de la course" (50 min) diffusé au théâtre de Béziers
                 </p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="rose">Adobe Premiere Pro</Tag>
                   <Tag color="rose">Adobe Illustrator</Tag>
@@ -174,7 +174,6 @@ export default function Audiovisuel() {
               <VideoPlayer youtubeId="INx2e5ajWwo" />
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/audiovisuel/auboutdelacourse/logos3.webp"
                 items={courseMedia}
                 index={1}
               />
@@ -197,7 +196,7 @@ export default function Audiovisuel() {
                 <p className="font-bold text-[25px]">B-Roll d'un cocktail flambant</p>
                 <p className="text-normal/90">Vidéo publicitaire</p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="rose">Adobe Illustrator</Tag>
                   <Tag color="rose">Procreate</Tag>
@@ -216,7 +215,6 @@ export default function Audiovisuel() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/audiovisuel/b%20roll/storyboard.webp"
                 items={brollMedia}
                 index={0}
               />
@@ -244,7 +242,7 @@ export default function Audiovisuel() {
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Court-métrage artistique "Nammu"</p>
 
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="violet">Story boarding</Tag>
                   <Tag color="violet">Découpage technique</Tag>
@@ -283,7 +281,7 @@ export default function Audiovisuel() {
                 <p className="font-bold text-[25px]">Processus de storyboarding</p>
                 <p className="text-normal/90">Court métrage "Était-ce un rêve ?"</p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="violet">Story boarding</Tag>
                   <Tag color="violet">Décoration</Tag>
@@ -295,20 +293,17 @@ export default function Audiovisuel() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/audiovisuel/reve/storyboard-1.webp"
                 items={processusMedia}
                 index={0}
               />
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/audiovisuel/reve/tournage.webp"
                 items={processusMedia}
                 index={1}
               />
             </div>
             <MediaImage
               className="rounded-[10px] w-full"
-              src="/optimized/ressources/audiovisuel/reve/st.webp"
               items={processusMedia}
               index={2}
             />

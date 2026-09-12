@@ -34,8 +34,8 @@ const dessins = [
 ];
 
 const allImages = [
-  ...dessins.map((name) => ({ src: `/optimized/ressources/dessin/${name}` })),
-  { src: '/optimized/ressources/dessin/tpe.webp' },
+  ...dessins.map((name) => ({ src: `dessin/${name}` })),
+  { src: 'dessin/tpe.webp' },
 ];
 
 export default function Dessin() {
@@ -43,7 +43,7 @@ export default function Dessin() {
 
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes dessins">
           <p>
             J'apprécie le dessin depuis l'enfance mais lorsque mon intérêt pour le graphisme et
@@ -60,7 +60,7 @@ export default function Dessin() {
             {dessins.map((name, i) => (
               <GalleryImage
                 key={name}
-                src={`/optimized/ressources/dessin/${name}`}
+                src={`dessin/${name}`}
                 className="w-full rounded-[15px] md:rounded-[10px]"
                 onClick={() => setLightboxIndex(i)}
               />
@@ -70,7 +70,7 @@ export default function Dessin() {
 
         <Reveal>
           <GalleryImage
-            src="/optimized/ressources/dessin/tpe.webp"
+            src="dessin/tpe.webp"
             className="rounded-[15px] md:rounded-[10px]"
             onClick={() => setLightboxIndex(dessins.length)}
           />

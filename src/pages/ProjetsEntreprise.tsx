@@ -15,22 +15,22 @@ const smIcons = [
 const jukeboxIcons = ['maison2.webp', 'seance2.webp', 'casque2.webp', 'engrenage2.webp'];
 
 const newsletter = [
-  { src: '/optimized/ressources/design/studio%20muybridge/newsletters/1.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/newsletters/2.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/newsletters/competences/1.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/newsletters/competences/3.webp' },
+  { src: 'design/studio%20muybridge/newsletters/1.webp' },
+  { src: 'design/studio%20muybridge/newsletters/2.webp' },
+  { src: 'design/studio%20muybridge/newsletters/competences/1.webp' },
+  { src: 'design/studio%20muybridge/newsletters/competences/3.webp' },
 ];
 
 const notices = [
-  { src: '/optimized/ressources/design/studio%20muybridge/notices/simple-oeuf.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/notices/simple-meuble-1.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/notices/simple-meuble-2.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/notices/mallette-2000.webp' },
+  { src: 'design/studio%20muybridge/notices/simple-oeuf.webp' },
+  { src: 'design/studio%20muybridge/notices/simple-meuble-1.webp' },
+  { src: 'design/studio%20muybridge/notices/simple-meuble-2.webp' },
+  { src: 'design/studio%20muybridge/notices/mallette-2000.webp' },
 ];
 
 const cdv = [
-  { src: '/optimized/ressources/design/studio%20muybridge/cdv/cdv.webp' },
-  { src: '/optimized/ressources/design/studio%20muybridge/cdv/cdv-dos.webp' },
+  { src: 'design/studio%20muybridge/cdv/cdv.webp' },
+  { src: 'design/studio%20muybridge/cdv/cdv-dos.webp' },
 ];
 
 const carrousel1 = ['carrousel1.webp', 'carrousel2.webp', 'carrousel3.webp', 'carrousel4.webp', 'carrousel5.webp'];
@@ -39,36 +39,36 @@ const carrousel3 = ['1.webp', '2.webp', '3.webp', '4.webp', '5.webp', '6.webp'];
 const labatPosts = ['1.webp', '2.webp', '3.webp', '4.webp', '5.webp', '6.webp', '7.webp'];
 
 const flyer = [
-  { src: '/optimized/ressources/design/labatmobile34/flyer/flyer1.webp' },
-  { src: '/optimized/ressources/design/labatmobile34/flyer/flyer2.webp' },
+  { src: 'design/labatmobile34/flyer/flyer1.webp' },
+  { src: 'design/labatmobile34/flyer/flyer2.webp' },
 ];
 
 const brochure = [
-  { src: '/optimized/ressources/design/labatmobile34/brochure/brochure.webp' },
-  { src: '/optimized/ressources/design/labatmobile34/brochure/brochure2.webp' },
+  { src: 'design/labatmobile34/brochure/brochure.webp' },
+  { src: 'design/labatmobile34/brochure/brochure2.webp' },
 ];
 
 const carrousel1Items: LightboxItem[] = carrousel1.map(
-  (name): LightboxItem => ({ src: `/optimized/ressources/design/studio%20muybridge/caroussels/1/${name}` }),
+  (name): LightboxItem => ({ src: `design/studio%20muybridge/caroussels/1/${name}` }),
 );
 
 const carrousel2Items: LightboxItem[] = carrousel2.map(
-  (name): LightboxItem => ({ src: `/optimized/ressources/design/studio%20muybridge/caroussels/2/${name}` }),
+  (name): LightboxItem => ({ src: `design/studio%20muybridge/caroussels/2/${name}` }),
 );
 
 const carrousel3Items: LightboxItem[] = carrousel3.map(
-  (name): LightboxItem => ({ src: `/optimized/ressources/design/studio%20muybridge/caroussels/3/${name}` }),
+  (name): LightboxItem => ({ src: `design/studio%20muybridge/caroussels/3/${name}` }),
 );
 
 const labatPostsItems: LightboxItem[] = labatPosts.map(
-  (name): LightboxItem => ({ src: `/optimized/ressources/design/labatmobile34/post/${name}` }),
+  (name): LightboxItem => ({ src: `design/labatmobile34/post/${name}` }),
 );
 
 
 export default function ProjetsEntreprise() {
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes productions visuelles">
           <p>
             Polyvalente dans la création de contenus visuels, dans cette section non exhaustive, je
@@ -82,7 +82,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Newsletters</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Adobe Illustrator</Tag>
                   <Tag color="rose">Mailjet</Tag>
@@ -97,7 +97,7 @@ export default function ProjetsEntreprise() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {newsletter.map((item, i) => (
-                <MediaImage key={item.src} className="rounded-[5px] w-full" src={item.src} items={newsletter} index={i} />
+                <MediaImage key={item.src} className="rounded-[5px] w-full" items={newsletter} index={i} />
               ))}
             </div>
           </Card>
@@ -106,7 +106,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Notices d'utilisation</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Adobe InDesign</Tag>
                 </div>
@@ -120,10 +120,10 @@ export default function ProjetsEntreprise() {
             <div className="flex flex-col gap-4">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {notices.slice(0, 3).map((item, i) => (
-                  <MediaImage key={item.src} className="rounded-[5px] w-full" src={item.src} items={notices} index={i} />
+                  <MediaImage key={item.src} className="rounded-[5px] w-full" items={notices} index={i} />
                 ))}
               </div>
-              <MediaImage className="rounded-[5px] w-full" src={notices[3].src} items={notices} index={3} />
+              <MediaImage className="rounded-[5px] w-full" items={notices} index={3} />
             </div>
           </Card>
 
@@ -131,7 +131,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Carte de visite</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Adobe Photoshop</Tag>
                   <Tag color="rose">Adobe Illustrator</Tag>
@@ -145,7 +145,7 @@ export default function ProjetsEntreprise() {
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {cdv.map((item, i) => (
-                <MediaImage key={item.src} className="rounded-[5px] w-full" src={item.src} items={cdv} index={i} />
+                <MediaImage key={item.src} className="rounded-[5px] w-full" items={cdv} index={i} />
               ))}
             </div>
           </Card>
@@ -154,7 +154,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Icônes</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <Tag color="rose">Adobe Illustrator</Tag>
                 <Tag color="violet">Communication</Tag>
               </div>
@@ -168,7 +168,7 @@ export default function ProjetsEntreprise() {
                       key={name}
                       className="flex flex-col bg-card-background rounded-[15px] border-card-border border-2 p-2"
                     >
-                      <img className="rounded-[5px]" src={`/optimized/ressources/design/studio%20muybridge/icons/${name}`} alt="" />
+                      <img className="rounded-[5px]" src={`design/studio%20muybridge/icons/${name}`} alt="" />
                     </div>
                   ))}
                 </div>
@@ -181,7 +181,7 @@ export default function ProjetsEntreprise() {
                       key={name}
                       className="flex flex-col bg-card-background rounded-[15px] border-card-border border-2 p-2"
                     >
-                      <img src={`/optimized/ressources/design/web%20design/jukeboxvr-icons/${name}`} alt="" />
+                      <img src={`design/web%20design/jukeboxvr-icons/${name}`} alt="" />
                     </div>
                   ))}
                 </div>
@@ -193,7 +193,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Carrousels</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <Tag color="rose">Adobe Illustrator</Tag>
                 <div className="flex gap-1">
                   <Tag color="violet">LinkedIn</Tag>
@@ -205,22 +205,22 @@ export default function ProjetsEntreprise() {
             <div className="flex flex-col gap-8">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {carrousel1.map((name, i) => (
-                  <MediaImage key={name} className="rounded-[5px] w-full" src={`/optimized/ressources/design/studio%20muybridge/caroussels/1/${name}`} items={carrousel1Items} index={i} />
+                  <MediaImage key={name} className="rounded-[5px] w-full" items={carrousel1Items} index={i} />
                 ))}
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {carrousel2.map((name, i) => (
-                  <MediaImage key={name} className="rounded-[10px] w-full" src={`/optimized/ressources/design/studio%20muybridge/caroussels/2/${name}`} items={carrousel2Items} index={i} />
+                  <MediaImage key={name} className="rounded-[10px] w-full" items={carrousel2Items} index={i} />
                 ))}
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {carrousel3.map((name, i) => (
-                  <MediaImage key={name} className="rounded-[10px] w-full" src={`/optimized/ressources/design/studio%20muybridge/caroussels/3/${name}`} items={carrousel3Items} index={i} />
+                  <MediaImage key={name} className="rounded-[10px] w-full" items={carrousel3Items} index={i} />
                 ))}
               </div>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {labatPosts.map((name, i) => (
-                  <MediaImage key={name} className="rounded-[10px] w-full" src={`/optimized/ressources/design/labatmobile34/post/${name}`} items={labatPostsItems} index={i} />
+                  <MediaImage key={name} className="rounded-[10px] w-full" items={labatPostsItems} index={i} />
                 ))}
               </div>
             </div>
@@ -230,7 +230,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Flyer</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Adobe Illustrator</Tag>
                   <Tag color="rose">Adobe InDesign</Tag>
@@ -243,7 +243,7 @@ export default function ProjetsEntreprise() {
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               {flyer.map((item, i) => (
-                <MediaImage key={item.src} className="rounded-[5px] w-full" src={item.src} items={flyer} index={i} />
+                <MediaImage key={item.src} className="rounded-[5px] w-full" items={flyer} index={i} />
               ))}
             </div>
           </Card>
@@ -252,7 +252,7 @@ export default function ProjetsEntreprise() {
           <Card dark gap="gap-10">
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Brochure</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Adobe InDesign</Tag>
                   <Tag color="rose">Adobe Illustrator</Tag>
@@ -265,7 +265,7 @@ export default function ProjetsEntreprise() {
 
             <div className="flex flex-col gap-4">
               {brochure.map((item, i) => (
-                <MediaImage key={item.src} className="rounded-[5px] w-full" src={item.src} items={brochure} index={i} />
+                <MediaImage key={item.src} className="rounded-[5px] w-full" items={brochure} index={i} />
               ))}
             </div>
           </Card>

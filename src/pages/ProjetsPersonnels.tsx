@@ -24,8 +24,8 @@ const images = [
 const wideImages = ['poster.webp', 'plaquette.webp'];
 
 const allImages = [
-  ...images.map((name) => ({ src: `/optimized/ressources/design/graphic%20design/${name}` })),
-  ...wideImages.map((name) => ({ src: `/optimized/ressources/design/graphic%20design/${name}` })),
+  ...images.map((name) => ({ src: `design/graphic%20design/${name}` })),
+  ...wideImages.map((name) => ({ src: `design/graphic%20design/${name}` })),
 ];
 
 export default function ProjetsPersonnels() {
@@ -33,7 +33,7 @@ export default function ProjetsPersonnels() {
 
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes projets personnels dans le graphisme">
           <p>
             En jouant aux jeux vidéo, je développe un intérêt pour le monde numérique. Curieuse,
@@ -47,7 +47,7 @@ export default function ProjetsPersonnels() {
             {images.map((name, i) => (
               <GalleryImage
                 key={name}
-                src={`/optimized/ressources/design/graphic%20design/${name}`}
+                src={`design/graphic%20design/${name}`}
                 className="w-full rounded-[15px] md:rounded-[10px]"
                 onClick={() => setLightboxIndex(i)}
               />
@@ -60,7 +60,7 @@ export default function ProjetsPersonnels() {
             {wideImages.map((name, i) => (
               <GalleryImage
                 key={name}
-                src={`/optimized/ressources/design/graphic%20design/${name}`}
+                src={`design/graphic%20design/${name}`}
                 className="w-full rounded-[15px] md:rounded-[10px]"
                 onClick={() => setLightboxIndex(images.length + i)}
               />

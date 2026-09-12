@@ -9,17 +9,17 @@ import VideoPlayer from '../components/VideoPlayer';
 
 const mwheelMedia: LightboxItem[] = [
   { type: 'youtube', src: 'V9mZy1msC8c' },
-  { type: 'image', src: '/optimized/ressources/design/web%20design/mwheel.webp' },
+  { type: 'image', src: 'design/web%20design/mwheel.webp' },
 ];
 
 const gedhysMedia: LightboxItem[] = [
-  { src: '/optimized/ressources/design/web%20design/gedhys.webp' },
+  { src: 'design/web%20design/gedhys.webp' },
 ];
 
 export default function Webdesign() {
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes projets web design">
           <p>
             Dans cette section, je présente les projets en web design sur lesquels j'ai travaillé
@@ -35,7 +35,7 @@ export default function Webdesign() {
               <p className="font-bold text-[25px]">
                 Application de pilotage vidéo multi-casque VR pour muséologie
               </p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex flex-wrap gap-1">
                   <Tag color="rose">Figma</Tag>
                   <Tag color="rose">Adobe Illustrator</Tag>
@@ -95,7 +95,7 @@ export default function Webdesign() {
                   Billeterie dématérialisée pour l'Opéra Orchestre National Montpellier
                 </p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Figma</Tag>
                 </div>
@@ -122,7 +122,7 @@ export default function Webdesign() {
                 </p>
                 <p className="text-normal/90">MWheel Mobility VR</p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Figma</Tag>
                 </div>
@@ -139,7 +139,6 @@ export default function Webdesign() {
               />
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/design/web%20design/mwheel.webp"
                 items={mwheelMedia}
                 index={1}
               />
@@ -173,7 +172,7 @@ export default function Webdesign() {
                 <p className="font-bold text-[25px]">Site web marketplace</p>
                 <p className="text-normal/90">GEDHYS</p>
               </div>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1">
                   <Tag color="rose">Figma</Tag>
                 </div>
@@ -185,7 +184,6 @@ export default function Webdesign() {
 
             <MediaImage
               className="rounded-[10px] w-full"
-              src="/optimized/ressources/design/web%20design/gedhys.webp"
               items={gedhysMedia}
               index={0}
             />

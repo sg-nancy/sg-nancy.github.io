@@ -86,14 +86,14 @@ export default function Header() {
             onMouseLeave={() => setProjetsPersonnelsOpen(false)}
           >
             <span
-              className={`relative hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none] pb-[25px] after:absolute after:left-0 after:bottom-[17px] after:h-0.5 after:bg-linear-to-r after:from-rose after:via-violet after:to-bleu after:transition-all after:duration-300 ${isProjetsPersonnelsActive ? 'text-white after:w-full' : 'after:w-0 hover:after:w-full'
+              className={`relative hover:text-normal/50 hover:cursor-pointer [-webkit-user-drag:none] pb-6.25 after:absolute after:left-0 after:bottom-4.25 after:h-0.5 after:bg-linear-to-r after:from-rose after:via-violet after:to-bleu after:transition-all after:duration-300 ${isProjetsPersonnelsActive ? 'text-white after:w-full' : 'after:w-0 hover:after:w-full'
                 }`}
             >
               Projets personnels
             </span>
             <div
               className={`flex flex-col pl-8 py-1 ${projetsPersonnelsOpen ? 'md:flex' : 'md:hidden'
-                } md:absolute md:gap-y-2 md:py-3 md:px-3 md:border-2 md:mt-[20px] md:border-card-border md:rounded-md md:bg-[#262538]/90 md:backdrop-blur-md md:shadow-lg`}
+                } md:absolute md:gap-y-2 md:py-3 md:px-3 md:border-2 md:mt-5 md:border-card-border md:rounded-md md:bg-[#262538]/90 md:backdrop-blur-md md:shadow-lg`}
             >
               {projetsPersonnelsLinks.map((g) => (
                 <NavLink

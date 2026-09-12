@@ -15,7 +15,7 @@ type TagProps = {
 
 export default function Tag({ color, children }: TagProps) {
   return (
-    <p className={`w-fit px-[5px] ${colorClasses[color]} rounded-[4px] font-bold text-[12px]`}>
+    <p className={`w-fit px-1.25 ${colorClasses[color]} rounded-sm font-bold text-[12px]`}>
       {children}
     </p>
   );

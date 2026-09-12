@@ -8,13 +8,13 @@ import Tag from '../components/Tag';
 import VideoPlayer from '../components/VideoPlayer';
 
 const umbMedia: LightboxItem[] = [
-  { src: '/optimized/ressources/informatique/umb.webp' },
+  { src: 'informatique/umb.webp' },
 ];
 
 export default function Informatique() {
   return (
     <div className="flex flex-col items-center m-6 md:my-11">
-      <div className="flex flex-col lg:w-[880px] md:w-[720px] gap-8">
+      <div className="flex flex-col lg:w-220 md:w-180 gap-8">
         <PageIntro title="Mes projets informatiques">
           <p>
             À la différence de la section "Web design", ici, je présente les projets informatiques
@@ -38,7 +38,7 @@ export default function Informatique() {
               <p className="font-bold text-[25px]">
                 Double site web : adhérer à une association ou en créer une (CMS)
               </p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="bleu">PHP</Tag>
                   <Tag color="bleu">Wordpress</Tag>
@@ -65,7 +65,7 @@ export default function Informatique() {
               <p className="font-bold text-[25px]">
                 Site web pour une association d'éleveurs de l'Hérault
               </p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="bleu">Wordpress</Tag>
                 </div>
@@ -88,7 +88,7 @@ export default function Informatique() {
               <p className="font-bold text-[25px]">
                 Jeu de société !Bang : reproduction dématérialisée
               </p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="bleu">JavaFX</Tag>
                 </div>
@@ -138,7 +138,7 @@ export default function Informatique() {
           <Card>
             <div className="flex flex-col gap-5">
               <p className="font-bold text-[25px]">Jeu ludique sensibilisant à la dyslexie</p>
-              <div className="flex flex-col gap-[5px]">
+              <div className="flex flex-col gap-1.25">
                 <div className="flex gap-1 flex-wrap">
                   <Tag color="bleu">HTML</Tag>
                   <Tag color="bleu">CSS</Tag>
@@ -155,7 +155,6 @@ export default function Informatique() {
               </div>
               <MediaImage
                 className="rounded-[10px] w-full"
-                src="/optimized/ressources/informatique/umb.webp"
                 items={umbMedia}
                 index={0}
               />

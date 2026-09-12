@@ -9,13 +9,13 @@ export default function ReadMore({ children }: { children: ReactNode }) {
       <div className="relative">
         <div
           className={`text-justify transition-all duration-300 ease-in-out ${
-            open ? 'max-h-[500px]' : 'max-h-[3.5rem] overflow-hidden opacity-60'
+            open ? 'max-h-125' : 'max-h-14 overflow-hidden opacity-60'
           }`}
         >
           {children}
         </div>
         {!open && (
-          <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-[#262537] to-transparent pointer-events-none transition-opacity duration-300"></div>
+          <div className="absolute bottom-0 left-0 w-full h-16 bg-linear-to-t from-[#262537] to-transparent pointer-events-none transition-opacity duration-300"></div>
         )}
       </div>
       <p
