@@ -32,8 +32,8 @@ export default function Reveal({ children, className = '', delay = 0 }: RevealPr
   return (
     <div
       ref={ref}
-      // className={`reveal ${visible ? 'is-visible' : ''} ${className}`}
-      // style={delay ? { animationDelay: `${delay}ms` } : undefined}
+      className={`reveal ${visible ? 'is-visible' : ''} ${className}`}
+      style={delay ? { animationDelay: `${delay}ms` } : undefined}
     >
       {children}
     </div>
