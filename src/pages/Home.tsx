@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <img
             className="h-40 rounded-full mb-9"
-            src="presentation/photo-cv5.webp"
+            src="/optimized/ressources/presentation/photo-cv5.webp"
             alt="Nancy"
           />
 
