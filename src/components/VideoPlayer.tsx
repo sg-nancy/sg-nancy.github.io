@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Play } from 'lucide-react';
+import { loadYouTubeAPI } from '../lib/youtube';
+import { pauseAllVideos, registerPlayer } from '../lib/videoManager';
 
 type VideoPlayerProps = {
   youtubeId: string;
@@ -13,18 +15,45 @@ export default function VideoPlayer({
   aspectClassName = 'aspect-video',
 }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(false);
+  const containerId = useRef(`yt-${Math.random().toString(36).slice(2)}`).current;
+  const playerRef = useRef<YT.Player | null>(null);
+
+  useEffect(() => {
+    if (!playing) return;
+
+    const pause = () => playerRef.current?.pauseVideo();
+    const unregister = registerPlayer(pause);
+
+    let cancelled = false;
+
+    loadYouTubeAPI().then((api) => {
+      if (cancelled) return;
+
+      playerRef.current = new api.Player(containerId, {
+        videoId: youtubeId,
+        playerVars: { autoplay: 1 },
+        events: {
+          onStateChange: (event) => {
+            if (event.data === api.PlayerState.PLAYING) {
+              pauseAllVideos(pause);
+            }
+          },
+        },
+      });
+    });
+
+    return () => {
+      cancelled = true;
+      unregister();
+      playerRef.current?.destroy();
+      playerRef.current = null;
+    };
+  }, [playing, youtubeId, containerId]);
 
   if (playing) {
     return (
       <div className={`${aspectClassName} overflow-hidden rounded-[10px] ${className}`}>
-        <iframe
-          className="h-full w-full"
-          src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1`}
-          title="Vidéo YouTube"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        />
+        <div id={containerId} className="h-full w-full" />
       </div>
     );
   }
