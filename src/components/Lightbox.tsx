@@ -2,6 +2,7 @@ import { useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 export type LightboxItem = {
+  folder?: string;
   src: string;
   alt?: string;
   poster?: string;
@@ -13,9 +14,10 @@ type LightboxProps = {
   index: number | null;
   onClose: () => void;
   onNavigate: (index: number) => void;
+  folder?: string;
 };
 
-export default function Lightbox({ items, index, onClose, onNavigate }: LightboxProps) {
+export default function Lightbox({ folder = "/optimized/ressources/", items, index, onClose, onNavigate }: LightboxProps) {
   const open = index !== null;
 
   const prev = useCallback(() => {
@@ -103,7 +105,7 @@ export default function Lightbox({ items, index, onClose, onNavigate }: Lightbox
           />
         ) : isVideo ? (
           <video
-            src={item.src}
+            src={folder + item.src}
             poster={item.poster}
             controls
             autoPlay
@@ -112,7 +114,7 @@ export default function Lightbox({ items, index, onClose, onNavigate }: Lightbox
           />
         ) : (
           <img
-            src={item.src}
+            src={folder + item.src}
             alt={item.alt ?? ''}
             className="max-h-[82vh] max-w-[90vw] rounded-[10px] object-contain shadow-2xl"
           />

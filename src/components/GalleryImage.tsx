@@ -4,9 +4,10 @@ type GalleryImageProps = {
   alt?: string;
   className?: string;
   onClick?: () => void;
+  [key: `data-${string}`]: string | undefined;
 };
 
-export default function GalleryImage({ folder = "/optimized/ressources/", src, alt = '', className = '', onClick }: GalleryImageProps) {
+export default function GalleryImage({ folder = "/optimized/ressources/", src, alt = '', className = '', onClick, ...rest }: GalleryImageProps) {
   return (
     <img
       src={folder + src}
@@ -14,6 +15,7 @@ export default function GalleryImage({ folder = "/optimized/ressources/", src, a
       className={`${onClick ? 'hover:cursor-zoom-in' : ''
         } ${className}`}
       onClick={onClick}
+      {...rest}
     />
   );
 }

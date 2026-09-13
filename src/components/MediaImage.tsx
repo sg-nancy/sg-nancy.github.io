@@ -8,9 +8,10 @@ type MediaImageProps = {
   className?: string;
   items: LightboxItem[];
   index: number;
+  [key: `data-${string}`]: string | undefined;
 };
 
-export default function MediaImage({ folder = "/optimized/ressources/", src, alt, className = '', items, index }: MediaImageProps) {
+export default function MediaImage({ folder = "/optimized/ressources/", src, alt, className = '', items, index, ...rest }: MediaImageProps) {
   const { open } = useLightbox();
   const item = items[index];
   return (
@@ -19,6 +20,7 @@ export default function MediaImage({ folder = "/optimized/ressources/", src, alt
       alt={alt || item.alt || ''}
       className={`cursor-zoom-in ${className}`}
       onClick={() => open(items, index)}
+      {...rest}
     />
   );
 }

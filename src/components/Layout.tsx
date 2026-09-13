@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import BackToTop from './BackToTop';
+import CursorLabel from './CursorLabel';
 
 export default function Layout() {
   return (
@@ -12,6 +13,7 @@ export default function Layout() {
       </main>
       <Footer />
       <BackToTop />
+      <CursorLabel />
     </div>
   );
 }
