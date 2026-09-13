@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import VideoPlayer from './VideoPlayer';
 
 export type LightboxItem = {
   folder?: string;
@@ -95,13 +96,10 @@ export default function Lightbox({ folder = "/optimized/ressources/", items, ind
         onClick={(e) => e.stopPropagation()}
       >
         {isYoutube ? (
-          <iframe
-            className="aspect-video w-[90vw] max-w-[80vh] rounded-[10px] object-contain shadow-2xl"
-            src={`https://www.youtube-nocookie.com/embed/${item.src}`}
-            title={item.alt ?? 'Vidéo YouTube'}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
+          <VideoPlayer
+            youtubeId={item.src}
+            className="w-[90vw] max-w-[80vh]"
+            aspectClassName="aspect-video"
           />
         ) : isVideo ? (
           <video

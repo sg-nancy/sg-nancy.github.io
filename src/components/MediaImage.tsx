@@ -18,6 +18,7 @@ export default function MediaImage({ folder = "/optimized/ressources/", src, alt
     <img
       src={folder + (src || item.src)}
       alt={alt || item.alt || ''}
+      loading="lazy"
       className={`cursor-zoom-in ${className}`}
       onClick={() => open(items, index)}
       {...rest}
