@@ -15,6 +15,7 @@ export default function MediaImage({ src, alt = '', className = '', items, index
     <img
       src={src}
       alt={alt}
+      loading="lazy"
       className={`cursor-zoom-in ${className}`}
       onClick={() => open(items, index)}
     />

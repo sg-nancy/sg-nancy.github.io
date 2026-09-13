@@ -10,6 +10,7 @@ export default function GalleryImage({ src, alt = '', className = '', onClick }:
     <img
       src={src}
       alt={alt}
+      loading="lazy"
       className={`${
         onClick ? 'hover:cursor-zoom-in' : ''
       } ${className}`}
