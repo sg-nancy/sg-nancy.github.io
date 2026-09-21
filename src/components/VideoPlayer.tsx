@@ -66,7 +66,13 @@ export default function VideoPlayer({
       className={`group relative block ${aspectClassName} overflow-hidden rounded-[10px] cursor-pointer ${className}`}
     >
       <img
-        src={`https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`}
+        onError={(e) => {
+          const img = e.currentTarget;
+          if (!img.src.includes('hqdefault')) {
+            img.src = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+          }
+        }}
         alt=""
         loading="lazy"
         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
